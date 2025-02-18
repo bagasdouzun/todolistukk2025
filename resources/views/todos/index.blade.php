@@ -72,7 +72,7 @@
                 </td>
                 <td>
                     <!-- Tombol Edit -->
-                    <a href="{{ route('todos.edit', $todo->id) }}" class="btn btn-warning">Edit</a>
+                    <a href="{{ route('todos.edit', $todo->id) }}" class="btn btn-warning text-light">Edit</a>
 
                     <!-- Tombol Hapus -->
                     <form action="{{ route('todos.destroy', $todo->id) }}" method="POST" style="display:inline;">

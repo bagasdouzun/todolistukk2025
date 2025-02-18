@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Notification') }}</div>
+                <div class="card-header">{{ __('Kamu berhasil login!') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,12 +14,10 @@
                         </div>
                     @endif
 
-                    <p>{{ __('Kamu berhasil login!') }}</p>
-
                     <!-- Detail Akun -->
-                    <div class="mt-3">
+                    <div>
                         <h5>Detail Akun :</h5>
-                        <ul class="list-group">
+                        <ul class="list-group mt-3">
                             <li class="list-group-item"><strong>Nama :</strong> {{ Auth::user()->name }}</li>
                             <li class="list-group-item"><strong>Email :</strong> {{ Auth::user()->email }}</li>
                             <li class="list-group-item">
